@@ -24,11 +24,11 @@ export default async function handler(req, res) {
     const response = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${process.env.re_A5cySRGs_E5kGqEvXyZ3LLXfaN3sCuF3x}`,
+        'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'Pagos y Servicios Baja <noreply@pagoserviciosbaja.com>',
+        from: 'Formulario Web <onboarding@resend.dev>',
         to: ['contacto@pagoserviciosbaja.com'],
         reply_to: email,
         subject: `[Web] ${subject}`,
