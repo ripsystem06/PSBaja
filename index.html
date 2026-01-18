@@ -6,12 +6,8 @@
   <title>Pagos y Servicios Baja - Distribuidor WaliApp</title>
   <meta name="description" content="Distribuidor autorizado de WaliApp en Baja California. Paga luz, agua, gas, internet y más. Genera ingresos extra como repartidor o amplía los servicios de tu negocio.">
   <meta name="keywords" content="pago de servicios, billetera digital, WaliApp, Baja California, pagar luz CFE, recargas, repartidores">
-  
-  <!-- Favicon -->
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-icon.svg">
-  
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -28,24 +24,16 @@
       }
     }
   </script>
-  
-  <!-- Google Fonts - Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Anime.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
-  
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  
   <style>
   body {
     font-family: 'Poppins', system-ui, sans-serif;
   }
   
-  /* Custom Scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
   }
@@ -60,7 +48,6 @@
     background: #1d4ed8;
   }
   
-  /* Animations */
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -77,7 +64,6 @@
     animation: pulse-slow 2s ease-in-out infinite;
   }
   
-  /* Carousel animation */
   @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-33.333%); }
@@ -86,13 +72,11 @@
     animation: scroll 20s linear infinite;
   }
   
-  /* Hero image */
   .hero-image {
     max-height: 600px;
     object-fit: contain;
   }
   
-  /* Mobile menu */
   .mobile-menu {
     max-height: 0;
     overflow: hidden;
@@ -102,7 +86,6 @@
     max-height: 500px;
   }
   
-  /* FAQ Accordion (para preguntas-frecuentes.html) */
   .faq-answer { 
     max-height: 0; 
     overflow: hidden; 
@@ -120,7 +103,6 @@
     transition: transform 0.3s ease;
   }
   
-  /* Smooth scroll */
   html {
     scroll-behavior: smooth;
   }
@@ -129,11 +111,10 @@
 </head>
 <body class="bg-white text-slate-800 antialiased">
 
-  <!-- ========== HEADER ========== -->
   <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5">
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between">
-        <!-- Logo -->
+
         <a href="#home" class="flex items-center gap-2">
           <div class="relative h-8" style="width: 160px;">
             <img src="images/logo-blanco.png" alt="Pagos y Servicios Baja" class="logo-white absolute inset-0 h-8 w-auto transition-opacity duration-300 opacity-100">
@@ -141,7 +122,6 @@
           </div>
         </a>
 
-        <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center gap-5">
           <a href="#home" class="nav-link text-sm font-medium transition-colors hover:text-blue-500 text-white">Inicio</a>
           <a href="#features" class="nav-link text-sm font-medium transition-colors hover:text-blue-500 text-white">Características</a>
@@ -159,14 +139,12 @@
           </a>
         </div>
 
-        <!-- Mobile Menu Button -->
         <button id="menuBtn" class="lg:hidden p-2" aria-label="Abrir menú">
           <i data-lucide="menu" class="menu-icon w-6 h-6 text-white"></i>
           <i data-lucide="x" class="close-icon w-6 h-6 text-white hidden"></i>
         </button>
       </div>
 
-      <!-- Mobile Navigation -->
       <nav id="mobileMenu" class="mobile-menu lg:hidden">
         <div class="mt-4 pb-4 flex flex-col gap-4 bg-white rounded-2xl p-6 shadow-xl">
           <a href="#home" class="mobile-link text-slate-700 font-medium hover:text-blue-600 transition-colors text-sm">Inicio</a>
@@ -184,24 +162,16 @@
     </div>
   </header>
 
-  <!-- ========== HERO SECTION ========== -->
   <section id="home" class="relative min-h-screen">
-    <!-- Background gradient -->
     <div class="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800"></div>
-
-    <!-- Decorative Shapes -->
     <div class="absolute top-0 left-0 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl"></div>
     <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl"></div>
     <div class="absolute top-1/2 left-1/4 w-64 h-64 bg-green-400/10 rounded-full blur-2xl"></div>
-
-    <!-- Floating Elements -->
     <div class="absolute top-20 right-20 w-20 h-20 bg-white/10 rounded-2xl backdrop-blur-sm hidden lg:block animate-float"></div>
     <div class="absolute bottom-40 left-20 w-16 h-16 bg-white/10 rounded-full backdrop-blur-sm hidden lg:block animate-pulse"></div>
 
     <div class="container mx-auto px-4 lg:px-12 relative z-10">
       <div class="flex flex-col lg:flex-row items-center min-h-screen pt-24 pb-16 gap-16">
-
-        <!-- CONTENT -->
         <div class="lg:w-1/2 text-center lg:text-left hero-content">
           <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm mb-6">
             <i data-lucide="shield" class="w-4 h-4"></i>
@@ -242,7 +212,6 @@
             </p>
           </div>
 
-          <!-- STATS -->
           <div class="flex flex-wrap justify-center lg:justify-start gap-8 stats-container">
             <div class="stat-item">
               <p class="text-3xl font-bold text-white">500K+</p>
@@ -259,7 +228,6 @@
           </div>
         </div>
 
-        <!-- HERO IMAGE -->
         <div class="lg:w-1/2 flex justify-end pointer-events-none pr-6 lg:pr-16 hero-image-container">
           <img src="images/mujer-celular.webp" alt="Usuario usando WaliApp" class="hero-image">
         </div>
@@ -268,7 +236,6 @@
     </div>
   </section>
 
-  <!-- ========== SERVICES CAROUSEL ========== -->
   <section class="py-8 bg-white border-b border-slate-100">
     <div class="container mx-auto px-4 mb-4">
       <p class="text-center text-sm text-slate-500 font-medium">Paga más de 100 servicios con WaliApp</p>
@@ -276,12 +243,10 @@
 
     <div class="overflow-hidden">
       <div id="servicesCarousel" class="flex gap-6 animate-scroll" style="width: max-content;">
-        <!-- Services will be duplicated by JS for infinite scroll -->
       </div>
     </div>
   </section>
-
-  <!-- ========== FEATURES SECTION ========== -->
+  
   <section id="features" class="py-20 bg-slate-50">
     <div class="container mx-auto px-4">
       <div class="text-center max-w-2xl mx-auto mb-16">
@@ -297,23 +262,19 @@
       </div>
 
       <div id="featuresGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Features will be injected by JS -->
       </div>
     </div>
   </section>
 
-  <!-- ========== ABOUT SECTION ========== -->
   <section id="about" class="py-20 bg-white">
     <div class="container mx-auto px-4">
       <div class="flex flex-col lg:flex-row items-center gap-16">
-        <!-- Image Side -->
         <div class="lg:w-1/2 about-image">
           <div class="relative">
             <div class="relative rounded-3xl overflow-hidden shadow-2xl">
               <img src="images/abarrotes.webp" alt="Ofrece servicios con WaliApp" class="w-full h-auto">
             </div>
 
-            <!-- Floating Card -->
             <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-5 shadow-xl border border-slate-100 floating-card">
               <div class="flex items-center gap-3">
                 <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
@@ -326,14 +287,12 @@
               </div>
             </div>
 
-            <!-- Decorative Dots -->
             <div class="absolute -top-8 -left-8 w-32 h-32 opacity-30 hidden md:block">
               <div class="grid grid-cols-5 gap-2" id="decorativeDots"></div>
             </div>
           </div>
         </div>
 
-        <!-- Content Side -->
         <div class="lg:w-1/2 about-content">
           <span class="inline-block px-4 py-1.5 bg-blue-100 text-blue-600 text-sm font-medium rounded-full mb-4">
             Sobre Nosotros
@@ -348,19 +307,15 @@
           </p>
 
           <div class="space-y-4 mb-10" id="benefitsList">
-            <!-- Benefits will be injected by JS -->
           </div>
 
-          <!-- Stats -->
           <div class="grid grid-cols-3 gap-6" id="aboutStats">
-            <!-- Stats will be injected by JS -->
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== SERVICES SECTION ========== -->
   <section id="services" class="py-20 bg-gradient-to-br from-blue-700 via-blue-800 to-blue-900">
     <div class="container mx-auto px-4">
       <div class="text-center max-w-2xl mx-auto mb-16">
@@ -374,7 +329,6 @@
       </div>
 
       <div id="servicesGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
-        <!-- Services will be injected by JS -->
       </div>
 
       <div class="text-center mt-12">
@@ -385,11 +339,10 @@
     </div>
   </section>
 
-  <!-- ========== REPARTIDORES SECTION ========== -->
   <section id="repartidores" class="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
     <div class="container mx-auto px-4">
       <div class="flex flex-col lg:flex-row items-center gap-12">
-        <!-- Content -->
+
         <div class="lg:w-1/2 repartidores-content">
           <div class="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-600 text-sm font-medium rounded-full mb-4">
             <i data-lucide="bike" class="w-4 h-4"></i>
@@ -407,7 +360,6 @@
           </p>
 
           <div id="repartidoresBenefits" class="grid sm:grid-cols-2 gap-6 mb-8">
-            <!-- Benefits will be injected by JS -->
           </div>
 
           <a href="#registro" class="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/30">
@@ -416,14 +368,12 @@
           </a>
         </div>
 
-        <!-- Image -->
         <div class="lg:w-1/2 repartidores-image">
           <div class="relative">
             <div class="rounded-3xl overflow-hidden shadow-2xl">
               <img src="images/conductores.webp" alt="Crece tu negocio con WaliApp" class="w-full h-auto">
             </div>
 
-            <!-- Floating Stats Card -->
             <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-5 shadow-xl border border-slate-100">
               <div class="flex items-center gap-3">
                 <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
@@ -441,10 +391,9 @@
     </div>
   </section>
 
-  <!-- ========== REGISTRO SECTION ========== -->
   <section id="registro" class="py-20 bg-white">
     <div class="container mx-auto px-4">
-      <!-- HEADER -->
+
       <div class="text-center max-w-2xl mx-auto mb-16">
         <span class="inline-block px-4 py-1.5 bg-blue-100 text-blue-600 text-sm font-medium rounded-full mb-4">
           Registro
@@ -458,12 +407,9 @@
         </p>
       </div>
 
-      <!-- CARDS -->
       <div id="registroCards" class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <!-- Cards will be injected by JS -->
       </div>
 
-      <!-- DISCLAIMER -->
       <div class="max-w-3xl mx-auto mt-10 text-center">
         <p class="text-xs text-slate-500 leading-relaxed flex items-center justify-center gap-2 flex-wrap">
           <i data-lucide="shield-check" class="w-4 h-4 text-green-500 flex-shrink-0"></i>
@@ -480,26 +426,21 @@
         </p>
       </div>
 
-      <!-- HOW IT WORKS -->
       <div class="mt-20 text-center">
         <h3 class="text-2xl font-bold text-slate-800 mb-8">¿Cómo funciona?</h3>
         <div id="howItWorks" class="flex flex-col md:flex-row items-center justify-center gap-8">
-          <!-- Steps will be injected by JS -->
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== DOWNLOAD SECTION ========== -->
   <section id="download" class="py-20 bg-white">
     <div class="container mx-auto px-4">
       <div class="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-[2.5rem] overflow-hidden">
-        <!-- Decorative Elements -->
         <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
         <div class="absolute bottom-0 left-0 w-64 h-64 bg-green-400/20 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2"></div>
 
         <div class="relative flex flex-col lg:flex-row items-center gap-12 p-8 lg:p-16">
-          <!-- Content -->
           <div class="lg:w-1/2 text-center lg:text-left download-content">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               <span class="block">Descarga la app móvil</span>
@@ -511,7 +452,6 @@
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <!-- App Store Button -->
               <a href="https://apps.apple.com/mx/app/waliapp/id6502324029" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-4 bg-black rounded-xl hover:bg-slate-800 transition-colors">
                 <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
@@ -522,7 +462,6 @@
                 </div>
               </a>
 
-              <!-- Google Play Button -->
               <a href="https://play.google.com/store/search?q=WaliApp&c=apps&hl=en" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-4 bg-black rounded-xl hover:bg-slate-800 transition-colors">
                 <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
@@ -534,7 +473,6 @@
               </a>
             </div>
 
-            <!-- Trust Badges -->
             <div class="flex items-center justify-center lg:justify-start gap-6 mt-8">
               <div class="flex items-center gap-2 text-white/80">
                 <div class="flex" id="starRating">
@@ -545,7 +483,6 @@
             </div>
           </div>
 
-          <!-- Phone Image -->
           <div class="lg:w-1/2 flex justify-center download-phone">
             <div class="relative">
               <div class="w-64 md:w-72 h-[500px] md:h-[560px] bg-slate-900 rounded-[2.5rem] p-2 shadow-2xl">
@@ -563,7 +500,6 @@
                 </div>
               </div>
 
-              <!-- Floating Notification -->
               <div class="absolute -left-8 top-1/3 bg-white rounded-xl p-4 shadow-xl hidden md:block">
                 <div class="flex items-center gap-3">
                   <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
@@ -582,10 +518,8 @@
     </div>
   </section>
 
-  <!-- ========== CONTACT SECTION ========== -->
   <section id="contacto" class="py-20 bg-slate-50">
     <div class="container mx-auto px-4">
-      <!-- Header -->
       <div class="text-center mb-16">
         <span class="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-4">
           Contacto
@@ -599,7 +533,6 @@
       </div>
 
       <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-        <!-- Contact Form -->
         <div class="bg-white rounded-3xl p-8 shadow-xl contact-form">
           <h3 class="text-xl font-bold text-slate-800 mb-6">Envíanos un mensaje</h3>
 
@@ -658,14 +591,10 @@
           </form>
         </div>
 
-        <!-- Contact Info & WhatsApp -->
         <div class="flex flex-col gap-6">
-          <!-- Contact Info Cards -->
           <div id="contactInfoCards" class="grid sm:grid-cols-2 gap-4">
-            <!-- Cards will be injected by JS -->
           </div>
 
-          <!-- WhatsApp CTA -->
           <div class="bg-gradient-to-br from-green-500 to-green-600 rounded-3xl p-8 text-white flex-1">
             <div class="flex items-start gap-4 mb-6">
               <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0">
@@ -693,7 +622,6 @@
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
   <footer class="bg-slate-900 text-white">
     <div class="container mx-auto px-4 py-16">
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
@@ -714,8 +642,6 @@
           <p class="text-xs text-slate-500 mb-6">
             Powered by <span class="text-blue-400 font-semibold">WALIapp</span>
           </p>
-
-          <!-- Contact Info -->
           <div class="space-y-3 text-sm text-slate-400">
             <a href="mailto:contacto@pagoserviciosbaja.com" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
               <i data-lucide="mail" class="w-4 h-4"></i>
@@ -732,7 +658,6 @@
           </div>
         </div>
 
-        <!-- Links Columns -->
         <div>
           <h4 class="font-semibold mb-4">Producto</h4>
           <ul class="space-y-3">
@@ -750,7 +675,6 @@
             <li><a href="#repartidores" class="text-slate-400 hover:text-blue-400 transition-colors text-sm">Para Repartidores</a></li>
             <li><a href="#contacto" class="text-slate-400 hover:text-blue-400 transition-colors text-sm">Contacto</a></li>
           </ul>
-          <!-- Social Links -->
           <div class="flex items-center gap-3 mt-4">
             <a href="https://facebook.com/pagosyserviciosbaja" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
               <i data-lucide="facebook" class="w-4 h-4"></i>
@@ -778,7 +702,6 @@
         </div>
       </div>
 
-      <!-- Bottom Bar -->
       <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col items-center gap-2">
         <p class="text-slate-400 text-sm">
           © <span id="currentYear"></span> Pagos y Servicios Baja. Todos los derechos reservados.
@@ -793,9 +716,7 @@
     </div>
   </footer>
 
-  <!-- ========== WHATSAPP FLOATING BUTTON ========== -->
   <div id="whatsappButton" class="fixed bottom-6 right-6 z-50 transition-all duration-300 translate-y-20 opacity-0">
-    <!-- Tooltip -->
     <div id="whatsappTooltip" class="absolute bottom-full right-0 mb-3 hidden">
       <div class="relative bg-white rounded-2xl shadow-xl p-4 max-w-xs">
         <button id="closeTooltip" class="absolute -top-2 -right-2 w-6 h-6 bg-slate-200 rounded-full flex items-center justify-center hover:bg-slate-300 transition-colors">
@@ -806,7 +727,6 @@
       </div>
     </div>
 
-    <!-- WhatsApp Button -->
     <a href="https://wa.me/526462762564?text=Hola,%20me%20interesa%20información%20sobre%20Pagos%20y%20Servicios%20Baja" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
       <span class="hidden md:block max-w-0 overflow-hidden group-hover:max-w-xs group-hover:pl-5 transition-all duration-300 whitespace-nowrap font-medium">
         Escríbenos
@@ -817,12 +737,9 @@
         </svg>
       </div>
     </a>
-
-    <!-- Pulse animation -->
     <span class="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-30 pointer-events-none"></span>
   </div>
 
-  <!-- ========== JAVASCRIPT ========== -->
   <script src="main.js"></script>
 </body>
 </html>
